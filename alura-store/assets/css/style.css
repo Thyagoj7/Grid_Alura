@@ -1,0 +1,55 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto; 
+}
+
+.cabecalho {
+    /* background: #00cc99; */
+    grid-area: cabecalho;
+}
+
+.conteudo {
+    /* background: #ff8080; */
+    grid-area: conteudo;
+}
+
+.rodape {
+    /* background : #0099ff; */
+    grid-area: rodape;
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    grid-area: cabecalho;
+    padding: 0 2rem;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    padding: 0 2rem;
+}
+
+.populares {
+    padding:  3rem 0;
+}
+
+.app {
+    /*demais propriedades */
+    grid-template-rows: 50px auto auto;
+  }
+
+  .rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+}
